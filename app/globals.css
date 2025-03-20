@@ -73,6 +73,7 @@
   --width-348: 348px;
   --text-xxxl: 32px;
   --text-xxs: 10px;
+
   --animate-rotate-back: rotate-back 0.25s ease-in-out forwards;
 
   --color-gray-200: rgb(var(--gray-200));
@@ -83,6 +84,7 @@
 
   --color-gray-00: initial;
   --color-gray-00: rgb(var(--gray-00));
+  --color-gray-25: rgb(var(--gray-25));
   --color-gray-50: rgb(var(--gray-50));
   --color-gray-100: rgb(var(--gray-100));
   --color-gray-300: rgb(var(--gray-300));

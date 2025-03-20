@@ -5,7 +5,7 @@ import React from "react";
 const AsideCompo = () => {
   const path = usePathname();
   // console.log(path);
-  if (path === "/scroll" || path === "/jobs" || path === "/articles") {
+  if (path === "/scroll" || path === "/jobs" || path === "/snap") {
     return (
       <aside
         className="max-w-[348px] w-full float-right flex-shrink-0 bg-gray-00"
@@ -636,8 +636,8 @@ const AsideCompo = () => {
               </>
             )}
 
-            {/* articles  */}
-            {path === "/articles" && (
+            {/* snap  */}
+            {path === "/snap" && (
               <div className="pb-10">
                 <p className="text-gray-1k font-semibold text-sm mb-6">
                   Top Writers of the Week

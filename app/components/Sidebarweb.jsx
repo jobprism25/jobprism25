@@ -137,7 +137,7 @@ const Sidebarweb = () => {
             </Link>
             <Link
               className="flex lg:flex-row flex-col items-center group border-t-2 border-green lg:border-0 pt-2 lg:py-2.5"
-              href="/articles"
+              href="/snap"
             >
               <span className="relative text-gray-1k shrink-0">
                 <svg
@@ -191,10 +191,10 @@ const Sidebarweb = () => {
               <span className="flex flex-col lg:ml-2 mt-2 lg:mt-0 transition-all lg:group-hover:translate-x-1">
                 <span
                   className={`paragraph-clamp1 lg:text-base text-xxs text-gray-1k ${
-                    path === "/articles" ? "font-bold" : "font-normal"
+                    path === "/snap" ? "font-bold" : "font-normal"
                   } `}
                 >
-                  Articles
+                  Snap
                 </span>
               </span>
             </Link>

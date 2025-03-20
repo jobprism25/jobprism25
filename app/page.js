@@ -1,6 +1,18 @@
-import Image from "next/image";
-import Sidebarweb from "./components/Sidebarweb";
+"use client";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
 
-export default function Home() {
+import React from "react";
+
+const page = () => {
+  const path = usePathname();
+  const router = useRouter();
+  useEffect(() => {
+    if (path === "/") {
+      router.push("/scroll");
+    }
+  }, []);
   return <></>;
-}
+};
+
+export default page;
