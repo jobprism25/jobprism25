@@ -20,7 +20,7 @@ const revalidate = 0;
 // ];
 
 const ShortArticle = ({ job }) => {
-  console.log(job.snap);
+  // console.log(job.snap);
 
   return (
     <div className="relative hover:!bg-gray-25  transition-all bg-gray-00 group">

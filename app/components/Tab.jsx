@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 
 const Tab = () => {
@@ -23,7 +24,7 @@ const Tab = () => {
     >
       <div className="flex items-center justify-center w-full relative">
         <div className="absolute left-0">
-          <h1 className="text-base text-gray-1k font-semibold">Scroll</h1>
+          <h1 className="text-base text-gray-1k font-semibold">Snaps</h1>
         </div>
         <div
           ref={cntainerRef}
@@ -31,20 +32,20 @@ const Tab = () => {
           onMouseLeave={handleMouseLeave}
           className="flex rounded-xl relative bg-clip-padding"
         >
-          <a
+          <Link
             className="px-4 py-2 uppercase bg-clip-padding bg-gray-00 rounded-l-xl !border border-transparent flex items-center"
-            href="/scroll"
+            href="/snap"
           >
             <p className="text-green-300 dark:text-green-200 font-semibold text-xs">
               Newest
             </p>
-          </a>
-          <a
+          </Link>
+          <Link
             className="px-4 uppercase flex gap-2 items-center bg-clip-padding bg-gray-00 !border-y border-transparent !border-r rounded-r-xl"
             href="/snap/trending"
           >
             <p className="text-gray-1k font-semibold text-xs">Trending</p>
-          </a>
+          </Link>
           <div
             className="circle-gradient rounded-xl absolute top-0 left-0 w-full h-full -z-5 circle-gradient-vars"
             style={{
